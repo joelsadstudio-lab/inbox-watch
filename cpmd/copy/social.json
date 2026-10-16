@@ -1,0 +1,38 @@
+{
+  "S1": {
+    "date": "2026-10-19",
+    "topic": "PDE registration closes 30 October",
+    "facebook": "Writing the PDE on 12 November? Registration and payment close on 30 October, and it is done only through the MyPPRA portal.\n\nThree things to do this week:\n1. Register on MyPPRA and pay with your correct 7-digit reference number\n2. Keep your proof of payment\n3. Check that your seat number appears on the portal before exam day\n\nQuestions about preparing? WhatsApp us on {{whatsapp_number}} or visit {{pde_page_link}}.\n\n#PDE #PPRA #PropertyManagementCourses #PropertyCourses #CPMD",
+    "linkedin": "PDE candidates: registration and payment for the 12 November sitting close on 30 October, through the MyPPRA portal only.\n\nAfter the portal problems at the February and May sittings, register early, pay with your correct 7-digit reference, keep your proof of payment and confirm your seat number on the portal well before the exam.\n\nCPMD's PDE preparation runs on {{pde_prep_dates_nov}}. Details: {{pde_page_link}}\n\n#PDE #PPRA #PropertyManagementCourses #PropertyCourses #CPMD"
+  },
+  "S2": {
+    "date": "2026-11-02",
+    "topic": "STM: three Acts",
+    "facebook": "Every sectional title scheme in South Africa runs on three Acts: the Sectional Titles Act, the Sectional Titles Schemes Management Act and the Community Schemes Ombud Service Act.\n\nIf you manage, administer or sit as a trustee on a scheme, how confident are you with all three?\n\nCPMD's Sectional Title Management course covers each of them, applied to the schemes you work with. Next intake: {{intake_date_STM}}. Brochure: {{brochure_link_STM}}\n\n#SectionalTitle #PropertyManagementCourses #PropertyCourses #CPMD",
+    "linkedin": "Managing agents and portfolio managers: three Acts govern every sectional title scheme you handle: the Sectional Titles Act, the STSMA and the CSOS Act.\n\nCPMD's Sectional Title Management course is built for managing agents, administrators, trustees and developers. Online with webinars, 6 days over 2 months. Next intake: {{intake_date_STM}}.\n\nBrochure and dates: {{brochure_link_STM}}\n\n#SectionalTitle #PropertyManagementCourses #PropertyCourses #CPMD"
+  },
+  "S3": {
+    "date": "2026-11-05",
+    "topic": "PFM graduate outcome",
+    "facebook": "\"Since completing the course, I've been promoted from Leasing Coordinator to Leasing Team Leader, managing a team of 10 and operations across more than 700 shops.\"\n\nA Property and Facilities Management graduate, July 2026.\n\nThe next PFM intake starts on {{intake_date_PFM}}. Brochure: {{brochure_link_PFM}}\n\n#FacilitiesManagement #PropertyManagementCourses #PropertyCourses #CPMD",
+    "linkedin": "We asked a recent Property and Facilities Management graduate what changed after the course. Their answer: a move from Leasing Coordinator to Leasing Team Leader, with a team of 10 and more than 700 shops.\n\nPFM is designed for building managers, commercial and retail property managers and brokers. Next intake: {{intake_date_PFM}}. {{brochure_link_PFM}}\n\n#FacilitiesManagement #PropertyManagementCourses #PropertyCourses #CPMD"
+  },
+  "S4": {
+    "date": "2026-11-09",
+    "topic": "PDE week",
+    "facebook": "To everyone writing the PDE on Thursday: read the PPRA's exam instructions carefully, check your seat number on MyPPRA, and give yourself a quiet, reliable internet connection for the take-home paper.\n\nGood luck from all of us at CPMD. If February is your sitting, we will share preparation dates soon.\n\n#PDE #PPRA #PropertyCourses #CPMD",
+    "linkedin": "Good luck to every candidate writing the PDE on 12 November. Read the PPRA's instructions in full, confirm your seat number on MyPPRA, and plan for a stable connection for the take-home format.\n\nThe next sitting is on 11 February 2027, with registration from 4 to 29 January.\n\n#PDE #PPRA #PropertyCourses #CPMD"
+  },
+  "S5": {
+    "date": "2026-11-12",
+    "topic": "Free webinar with Graeme",
+    "facebook": "Free 45-minute session with Graeme Jay on {{webinar_nov_date}} at {{webinar_nov_time}}: preparing for the PDE. Bring your questions.\n\nReserve a place: {{webinar_nov_link}}\n\n#PropertyManagementCourses #PropertyCourses #CPMD",
+    "linkedin": "On {{webinar_nov_date}} at {{webinar_nov_time}}, CPMD's Managing Director Graeme Jay is hosting a free 45-minute online session on preparing for the PDE, with time for questions at the end.\n\nPlaces: {{webinar_nov_link}}\n\n#PropertyManagementCourses #PropertyCourses #CPMD"
+  },
+  "S6": {
+    "date": "2026-11-19",
+    "topic": "Employer-funded training",
+    "facebook": "Many CPMD students do not pay for their course themselves. If your company has a training budget, we can prepare a short motivation letter for your manager explaining what the course covers and how it applies to your role.\n\nWhatsApp us on {{whatsapp_number}} and ask for a letter.\n\n#PropertyManagementCourses #PropertyCourses #CPMD",
+    "linkedin": "Training managers and team leads in property: CPMD runs its property programmes for individuals and as in-house cohorts for teams, including staff from organisations such as {{named_clients}}.\n\nIf you are planning 2027 training, contact Graeme Jay on 011 728 7225 or {{graeme_email}}.\n\n#PropertyManagementCourses #PropertyCourses #CPMD"
+  }
+}

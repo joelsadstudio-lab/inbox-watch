@@ -1,0 +1,74 @@
+{
+  "_readme": "Fill this in as CPMD answers. null or false = not yet decided, and every action that needs it stays BLOCKED. Edit, commit, push: the next agent run picks it up.",
+  "timezone": "Africa/Johannesburg",
+  "send_time": "08:30",
+  "decisions": {
+    "reactivation_lists_opted_in": false,
+    "pde_nov_prep_running": null,
+    "pde_page_live": false,
+    "site_fixes_done": false,
+    "whatsapp_confirmed": false,
+    "existing_leads_treatment": null
+  },
+  "_decision_notes": {
+    "reactivation_lists_opted_in": "CPMD confirms the four LEADS lists contain only opted-in contacts (POPIA). The 331-lead file is NOT covered.",
+    "pde_nov_prep_running": "Is CPMD running PDE prep for the 12 Nov sitting? false = P1 and the Nov PDE posts are dropped.",
+    "pde_page_live": "The NQF5 PDE page is restored and live.",
+    "site_fixes_done": "Workstream 1 site fixes are finished (gates new paid spend and Buffer posts that link to the site).",
+    "whatsapp_confirmed": "083 266 4300 is a WhatsApp line Friddah monitors.",
+    "existing_leads_treatment": "The two docs conflict: Plan says send R1-R3 reactivation to the four LEADS lists; Nurture Journey says one E2-style broadcast to the 225 on those lists. Set to 'reactivation' to run R1-R3."
+  },
+  "values": {
+    "whatsapp_number": null,
+    "pde_page_link": null,
+    "pde_prep_dates_nov": null,
+    "pde_prep_dates_feb": null,
+    "remind_january_link": null,
+    "webinar_nov_date": null,
+    "webinar_nov_time": null,
+    "webinar_nov_link": null,
+    "webinar_nov_invite_send_date": null,
+    "named_clients": null,
+    "graeme_email": null
+  },
+  "courses": {
+    "CIB": {
+      "name": null,
+      "list": "LEADS - CIB",
+      "intake_date": null,
+      "brochure_link": null,
+      "course_line": "a working understanding of commercial and industrial sales and letting, for agents, brokers and managers moving beyond residential"
+    },
+    "PFM": {
+      "name": "Property and Facilities Management",
+      "list": "LEADS - PFM",
+      "intake_date": null,
+      "brochure_link": null,
+      "course_line": "the skills to manage different types of property professionally and improve their financial return"
+    },
+    "PPD": {
+      "name": null,
+      "list": "LEADS - PPD",
+      "intake_date": null,
+      "brochure_link": null,
+      "course_line": "the financial mathematics, town planning principles, tax and ownership structures behind a new development"
+    },
+    "STM": {
+      "name": "Sectional Title Management",
+      "list": "LEADS - STM",
+      "intake_date": null,
+      "brochure_link": null,
+      "course_line": "the Sectional Titles Act, the Sectional Titles Schemes Management Act and the CSOS Act, applied to the schemes you manage"
+    }
+  },
+  "getresponse": {
+    "from_field_ids": {
+      "team": null,
+      "graeme": null
+    },
+    "registered_list": "Property Short Course Registration Form",
+    "pde_audience_lists": []
+  },
+  "approved_copy": [],
+  "done": []
+}

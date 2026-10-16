@@ -1,0 +1,404 @@
+[
+  {
+    "id": "R1",
+    "title": "Reactivation R1",
+    "kind": "getresponse_broadcast",
+    "owner": "agent",
+    "copy": "R1",
+    "due": "2026-10-20",
+    "expires": "2026-11-20",
+    "courses": [
+      "CIB",
+      "PFM",
+      "PPD",
+      "STM"
+    ],
+    "gates": [
+      "reactivation_lists_opted_in",
+      "whatsapp_confirmed",
+      [
+        "existing_leads_treatment",
+        "reactivation"
+      ]
+    ],
+    "audience": "course_list",
+    "source": "Plan > Email copy A"
+  },
+  {
+    "id": "R2",
+    "title": "Reactivation R2",
+    "kind": "getresponse_broadcast",
+    "owner": "agent",
+    "copy": "R2",
+    "due": "2026-10-27",
+    "expires": "2026-11-20",
+    "courses": [
+      "CIB",
+      "PFM",
+      "PPD",
+      "STM"
+    ],
+    "gates": [
+      "reactivation_lists_opted_in",
+      "whatsapp_confirmed",
+      [
+        "existing_leads_treatment",
+        "reactivation"
+      ]
+    ],
+    "audience": "course_list",
+    "source": "Plan > Email copy A"
+  },
+  {
+    "id": "R3",
+    "title": "Reactivation R3",
+    "kind": "getresponse_broadcast",
+    "owner": "agent",
+    "copy": "R3",
+    "due": "2026-11-03",
+    "expires": "2026-11-20",
+    "courses": [
+      "CIB",
+      "PFM",
+      "PPD",
+      "STM"
+    ],
+    "gates": [
+      "reactivation_lists_opted_in",
+      [
+        "existing_leads_treatment",
+        "reactivation"
+      ]
+    ],
+    "audience": "course_list",
+    "source": "Plan > Email copy A"
+  },
+  {
+    "id": "P1",
+    "title": "PDE November sitting email",
+    "kind": "getresponse_broadcast",
+    "owner": "agent",
+    "copy": "P1",
+    "due": "2026-10-19",
+    "expires": "2026-10-27",
+    "gates": [
+      "pde_nov_prep_running",
+      "pde_page_live"
+    ],
+    "audience": "pde_audience_lists",
+    "source": "Plan > Email copy C"
+  },
+  {
+    "id": "P2",
+    "title": "PDE February sitting email",
+    "kind": "getresponse_broadcast",
+    "owner": "agent",
+    "copy": "P2",
+    "due": "2027-01-05",
+    "expires": "2027-01-22",
+    "gates": [
+      "pde_page_live"
+    ],
+    "audience": "pde_audience_lists",
+    "source": "Plan > Email copy C"
+  },
+  {
+    "id": "WEB1",
+    "title": "November webinar invite",
+    "kind": "getresponse_broadcast",
+    "owner": "agent",
+    "copy": "WEB1",
+    "due": "{{webinar_nov_invite_send_date}}",
+    "expires": "{{webinar_nov_date}}",
+    "gates": [],
+    "audience": "pde_audience_lists",
+    "source": "Plan > Email copy D"
+  },
+  {
+    "id": "S1",
+    "title": "Social post 1",
+    "kind": "buffer_post",
+    "owner": "agent",
+    "copy": "S1",
+    "gates": [
+      "site_fixes_done",
+      "pde_nov_prep_running",
+      "pde_page_live"
+    ],
+    "source": "Plan > Social, ads and WhatsApp"
+  },
+  {
+    "id": "S2",
+    "title": "Social post 2",
+    "kind": "buffer_post",
+    "owner": "agent",
+    "copy": "S2",
+    "gates": [
+      "site_fixes_done"
+    ],
+    "source": "Plan > Social, ads and WhatsApp"
+  },
+  {
+    "id": "S3",
+    "title": "Social post 3",
+    "kind": "buffer_post",
+    "owner": "agent",
+    "copy": "S3",
+    "gates": [
+      "site_fixes_done"
+    ],
+    "source": "Plan > Social, ads and WhatsApp"
+  },
+  {
+    "id": "S4",
+    "title": "Social post 4",
+    "kind": "buffer_post",
+    "owner": "agent",
+    "copy": "S4",
+    "gates": [
+      "site_fixes_done"
+    ],
+    "source": "Plan > Social, ads and WhatsApp"
+  },
+  {
+    "id": "S5",
+    "title": "Social post 5",
+    "kind": "buffer_post",
+    "owner": "agent",
+    "copy": "S5",
+    "gates": [
+      "site_fixes_done"
+    ],
+    "source": "Plan > Social, ads and WhatsApp"
+  },
+  {
+    "id": "S6",
+    "title": "Social post 6",
+    "kind": "buffer_post",
+    "owner": "agent",
+    "copy": "S6",
+    "gates": [
+      "site_fixes_done"
+    ],
+    "source": "Plan > Social, ads and WhatsApp"
+  },
+  {
+    "id": "SCORE-2026-11-16",
+    "title": "Monthly scorecard 2026-11-16",
+    "kind": "report",
+    "owner": "agent",
+    "due": "2026-11-16",
+    "gates": [],
+    "source": "Plan > Scorecard"
+  },
+  {
+    "id": "SCORE-2026-12-11",
+    "title": "Monthly scorecard 2026-12-11",
+    "kind": "report",
+    "owner": "agent",
+    "due": "2026-12-11",
+    "gates": [],
+    "source": "Plan > Scorecard"
+  },
+  {
+    "id": "SCORE-2027-01-15",
+    "title": "Monthly scorecard 2027-01-15",
+    "kind": "report",
+    "owner": "agent",
+    "due": "2027-01-15",
+    "gates": [],
+    "source": "Plan > Scorecard"
+  },
+  {
+    "id": "DEC1",
+    "title": "Chase Graeme/Chantel: decisions 1-3 (intake dates, Nov PDE prep, form question, corporate list)",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-16",
+    "gates": []
+  },
+  {
+    "id": "DEC2",
+    "title": "Get Jan-Sep 2026 registrations, leads and spend per course (scorecard baseline)",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-23",
+    "gates": []
+  },
+  {
+    "id": "DEC3",
+    "title": "Confirm POPIA consent basis for the 331-lead file before it is emailed",
+    "kind": "human",
+    "owner": "CPMD",
+    "due": "2026-10-23",
+    "gates": []
+  },
+  {
+    "id": "SITE1",
+    "title": "Restore the PDE preparation page (12 Nov and 11 Feb sittings, WhatsApp button)",
+    "kind": "human",
+    "owner": "CPMD web",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "SITE2",
+    "title": "Fix header phone/WhatsApp links (tel:+27117287225, wa.me/27832664300)",
+    "kind": "human",
+    "owner": "CPMD web",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "SITE3",
+    "title": "Remove Lorem ipsum, 'dssdfs', dead links, 0 stat counters; fix HOAM certificate name",
+    "kind": "human",
+    "owner": "CPMD web",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "SITE4",
+    "title": "Replace 'CPMD Launches' banner; remove 'over 29 years' until confirmed",
+    "kind": "human",
+    "owner": "CPMD web",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "SITE5",
+    "title": "Add 'Next intake' line to course pages; add 'When would you like to start?' to brochure form",
+    "kind": "human",
+    "owner": "CPMD web",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "META1",
+    "title": "Confirm Meta Pixel fires on brochure and registration forms",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "META2",
+    "title": "Hold new prospecting; replace 4 always-on campaigns with 1 retargeting campaign",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "META3",
+    "title": "PDE burst live from PDE page restore to 30 Oct (set the ad set end date in Meta)",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-24",
+    "gates": []
+  },
+  {
+    "id": "META4",
+    "title": "Schedule prospecting pause 14 Dec - 4 Jan (set end/start dates in Meta, not a reminder)",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-12-11",
+    "gates": []
+  },
+  {
+    "id": "META5",
+    "title": "PDE burst 5-29 Jan",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2027-01-05",
+    "gates": []
+  },
+  {
+    "id": "META6",
+    "title": "Monthly offline upload of registrations to Meta",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-11-16",
+    "gates": []
+  },
+  {
+    "id": "GR1",
+    "title": "Fix 'Delete from Lists' workflow: exclude nurture_active or move to 60 days after nurture_done",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-21",
+    "gates": []
+  },
+  {
+    "id": "GR2",
+    "title": "Build master nurture workflow E1-E6 for CIB in GetResponse UI (API cannot create workflows); clone to PFM, PPD, STM",
+    "kind": "human",
+    "owner": "Joel",
+    "due": "2026-10-30",
+    "gates": []
+  },
+  {
+    "id": "GR3",
+    "title": "Handle R3/E6 replies: 1 -> Friddah call list, 2 -> tag for January, 3 -> remove from list",
+    "kind": "human",
+    "owner": "Friddah",
+    "due": "2026-11-04",
+    "gates": []
+  },
+  {
+    "id": "FU1",
+    "title": "First contact within 1 business hour, W1-W3 WhatsApp scripts, a status and lost reason on every lead",
+    "kind": "human",
+    "owner": "Friddah",
+    "due": "2026-10-19",
+    "gates": []
+  },
+  {
+    "id": "CORP1",
+    "title": "Approve 10 past corporate clients; Graeme sends in-house cohort emails from his own address",
+    "kind": "human",
+    "owner": "Graeme",
+    "due": "2026-10-30",
+    "gates": []
+  },
+  {
+    "id": "LI1",
+    "title": "Graeme LinkedIn post A (PDE, late Oct)",
+    "kind": "human",
+    "owner": "Graeme",
+    "due": "2026-10-28",
+    "gates": []
+  },
+  {
+    "id": "LI2",
+    "title": "Graeme LinkedIn post B (late Nov)",
+    "kind": "human",
+    "owner": "Graeme",
+    "due": "2026-11-25",
+    "gates": []
+  },
+  {
+    "id": "FBG1",
+    "title": "Facebook groups shortlist approved before any posting",
+    "kind": "human",
+    "owner": "Graeme",
+    "due": "2026-10-30",
+    "gates": []
+  },
+  {
+    "id": "WEBR1",
+    "title": "Run November PDE webinar",
+    "kind": "human",
+    "owner": "Graeme",
+    "due": "{{webinar_nov_date}}",
+    "gates": []
+  },
+  {
+    "id": "WEBR2",
+    "title": "Book and run January commercial-property webinar",
+    "kind": "human",
+    "owner": "Graeme",
+    "due": "2027-01-20",
+    "gates": []
+  }
+]

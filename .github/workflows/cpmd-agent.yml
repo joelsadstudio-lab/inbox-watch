@@ -1,0 +1,46 @@
+name: CPMD lead agent
+
+# Weekdays 06:15 SAST. Sends only when the repo variable CPMD_AGENT_LIVE is 'true';
+# otherwise it dry-runs and writes the brief. Set the variable to anything else to stop it.
+on:
+  schedule:
+    - cron: "15 4 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cpmd-agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests
+        run: python3 -m unittest discover -s tests
+      - name: Brief
+        run: python3 scripts/cpmd_agent.py brief --write
+      - name: Run agent
+        env:
+          GETRESPONSE_API_KEY: ${{ secrets.GETRESPONSE_API_KEY }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          if [ "${{ vars.CPMD_AGENT_LIVE }}" = "true" ]; then
+            python3 scripts/cpmd_agent.py run --live
+          else
+            python3 scripts/cpmd_agent.py run
+          fi
+      - name: Commit ledger and brief
+        if: always()
+        run: |
+          git config user.name "cpmd-agent"
+          git config user.email "cpmd-agent@users.noreply.github.com"
+          git add ledger out
+          git diff --cached --quiet || git commit -m "cpmd-agent: run $(date -u +%F)"
+          git push

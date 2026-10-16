@@ -8,5 +8,15 @@
       "instagram": "REPLACE_WITH_BUFFER_CHANNEL_ID",
       "linkedin": "REPLACE_WITH_BUFFER_CHANNEL_ID"
     }
+  },
+  "CPMD": {
+    "drive_sheet": "CPMD - Content Calendar",
+    "sheet_tab": "Calendar",
+    "timezone": "Africa/Johannesburg",
+    "channels": {
+      "facebook": "REPLACE_WITH_BUFFER_CHANNEL_ID",
+      "instagram": "REPLACE_WITH_BUFFER_CHANNEL_ID",
+      "linkedin": "REPLACE_WITH_BUFFER_CHANNEL_ID"
+    }
   }
 }

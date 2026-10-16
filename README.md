@@ -24,3 +24,24 @@ Ask Claude: *"Schedule Acme's November calendar."*
 ```bash
 python3 -m unittest discover -s tests
 ```
+
+## CPMD lead agent
+
+Works the CPMD lead-strategy plan: `cpmd/actions.json` lists every action, `cpmd/settings.json`
+holds CPMD's decisions and approvals, `scripts/cpmd_agent.py` sends what is ready.
+
+```bash
+python3 scripts/cpmd_agent.py brief      # overdue, due this week, what unblocks what
+python3 scripts/cpmd_agent.py status     # every action and why it is or isn't ready
+python3 scripts/cpmd_agent.py run        # dry run; --live sends
+python3 scripts/cpmd_agent.py check      # GetResponse list and from-field ids
+```
+
+An email or post is sent only when its decisions are set, every `{{placeholder}}` has a value,
+its copy id is in `approved_copy`, and it hasn't expired. Sends are recorded in
+`ledger/cpmd-agent.json`.
+
+**Schedule:** `.github/workflows/cpmd-agent.yml` runs weekdays at 06:15 SAST. Add the secrets
+`GETRESPONSE_API_KEY` and `BUFFER_API_KEY`, commit a `clients.json` with the CPMD Buffer channels,
+and set the repo variable `CPMD_AGENT_LIVE=true` to let it send. Without that variable it only
+dry-runs and writes `out/cpmd-brief.md`.
